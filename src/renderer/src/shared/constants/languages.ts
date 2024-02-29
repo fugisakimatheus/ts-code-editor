@@ -16,5 +16,6 @@ export const supportedLanguages: BundledLanguage[] = [
   'stylus',
   'tsx',
   'jsx',
-  'graphql'
+  'markdown',
+  'yaml'
 ]
