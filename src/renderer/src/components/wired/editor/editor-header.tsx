@@ -1,9 +1,13 @@
 import { Icon } from '@/components/ui/icon'
 
-export function EditorHeader() {
+type EditorHeaderProps = {
+  hideTabs?: boolean
+}
+
+export function EditorHeader({ hideTabs = false }: EditorHeaderProps) {
   return (
     <div className=" w-full h-8 flex flex-row justify-between bg-zinc-900 z-[999999]">
-      <div className="flex flex-row">
+      <div className={hideTabs ? 'hidden' : 'flex flex-row'}>
         <div className="px-2 py-1 bg-[#24292e] flex flex-row items-center justify-center cursor-pointer text-white w-max">
           <div className="flex flex-row items-center gap-[6px]">
             <span className="text-xs">

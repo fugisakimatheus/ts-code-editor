@@ -1,7 +1,8 @@
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable'
 import { Drawer } from './drawer'
-import { Editor } from './editor'
+// import { Editor } from './editor'
 import { EditorHeader } from './editor/editor-header'
+import { InitialPage } from './initial-page'
 // import { EditorTerminal } from './editor/editor-terminal'
 
 export function Layout() {
@@ -15,9 +16,10 @@ export function Layout() {
         <ResizableHandle className="bg-zinc-900" />
 
         <ResizablePanel className="relative">
-          <EditorHeader />
-          <Editor />
+          <EditorHeader hideTabs />
+          {/* <Editor /> */}
           {/* <EditorTerminal /> */}
+          <InitialPage />
         </ResizablePanel>
       </ResizablePanelGroup>
     </div>

@@ -146,7 +146,7 @@ const folders: FolderThreeItem[] = [
 
 export function FolderThree() {
   return (
-    <div className="h-full w-full flex flex-col px-3">
+    <div className="h-full w-full flex flex-col px-2">
       {folders.map((item, index) => (
         <FolderItem key={index} threeItem={item} />
       ))}

@@ -123,7 +123,10 @@ CommandItem.displayName = CommandPrimitive.Item.displayName
 const CommandShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => {
   return (
     <span
-      className={cn('ml-auto text-xs tracking-widest text-muted-foreground', className)}
+      className={cn(
+        'ml-auto text-xs tracking-widest text-zinc-300 bg-zinc-800 px-1 py-[1px] rounded shadow-md border border-zinc-700/50',
+        className
+      )}
       {...props}
     />
   )

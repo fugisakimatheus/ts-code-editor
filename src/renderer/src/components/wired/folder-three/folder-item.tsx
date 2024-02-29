@@ -28,7 +28,7 @@ export function FolderItem(props: FolderItemProps) {
   const iconColor = extension ? iconColorByExtension[extension] ?? 'text-zinc-400' : 'text-zinc-400'
 
   return (
-    <div className={`text-sm text-zinc-400 ${isFolder ? '' : 'pl-3'}`}>
+    <div className={`text-sm text-zinc-400 ${isFolder ? '' : 'pl-5'}`}>
       <div
         className="hover:bg-zinc-400/10 py-[2px] hover:text-zinc-200 flex flex-row items-center cursor-pointer px-1 transition-colors duration-100 ease-linear"
         onClick={() => setIsOpen((old) => !old)}
